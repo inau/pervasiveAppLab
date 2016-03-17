@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbc_rad_grp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ITU Beacons Only"
+            android:buttonTint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:id="@+id/lbc_rad_grp_itu"
+            android:layout_weight="1"
+            android:layout_alignParentLeft="true"/>
+        <RadioButton
+            android:checked="true"
+            android:textColor="@android:color/white"
+            android:buttonTint="@android:color/white"
+            android:layoutDirection="rtl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Beacons"
+            android:id="@+id/lbc_rad_grp_all"
+            android:layout_weight="1"
+            android:textAlignment="textEnd"
+            android:layout_alignParentRight="true" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbc_rad_grp"
+        android:text="Recent only:"
+        />
+    <CheckBox
+        android:buttonTint="@android:color/white"
+        android:id="@+id/lbc_chb"
+        android:layout_below="@id/lbc_rad_grp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+<ListView
+    android:layout_below="@id/lbc_chb"
+    android:id="@android:id/list"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+</ListView>
+
+
+</RelativeLayout>

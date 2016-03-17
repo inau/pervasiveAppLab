@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ItuContextPhoneApp</string>
+    <string name="title_activity_main">Beaconator</string>
+    <string name="request_permission_location_title">This app needs location access</string>
+    <string name="request_permission_location_body">Please grant location access so this app can detect beacons.</string>
+    <string name="request_permission_location_negative">Since location access has not been granted, this app will not be able to discover beacons when in the background.</string>
+    <string name="request_permission_limit">Functionality limited</string>
+
+</resources>
